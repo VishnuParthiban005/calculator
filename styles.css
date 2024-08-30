@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+body {
+    background-color: black;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(78, 119, 245);
+    height: 700px;
+    width: 500px;
+    margin: auto;
+}
