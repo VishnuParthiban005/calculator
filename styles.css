@@ -22,8 +22,10 @@ h1 {
 }
 
 .container {
-    background-color: rgb(78, 119, 245);
+    background-color: rgb(187, 203, 252);
     height: 700px;
     width: 500px;
     margin: auto;
+    border: 30px rgb(0, 27, 82) double;
+    border-radius: 40px;
 }
