@@ -3,6 +3,7 @@
     padding: 0px;
     border: 0px;
     font-family: "loopy-font", sans-serif;
+
 }
 
 @font-face {
@@ -28,4 +29,16 @@ h1 {
     margin: auto;
     border: 30px rgb(0, 27, 82) double;
     border-radius: 40px;
+}
+
+.display {
+    background-color: rgb(217, 243, 255);
+    font-size: 48px;
+    height: 100px;
+    margin: 16px;
+    text-align: right;
+}
+
+.numbers {
+    padding: 20px;
 }
