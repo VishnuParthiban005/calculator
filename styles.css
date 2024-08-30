@@ -2,12 +2,22 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
+    font-family: "loopy-font", sans-serif;
 }
+
+@font-face {
+    font-family: loopy-font;
+    src: url(./assets/loopy/LOOPY___.ttf);
+}
+
 body {
     background-color: black;
 }
+
 h1 {
     color: white;
+    font-size: 64px;
+    margin-bottom: 16px;
     text-align: center;
 }
 
