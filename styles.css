@@ -2,13 +2,16 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
-    font-family: "loopy-font", sans-serif;
+    font-family: "calculator-font", "loopy-font", sans-serif;
 
 }
 
 @font-face {
     font-family: loopy-font;
     src: url(./assets/loopy/LOOPY___.ttf);
+
+    font-family: calculator-font;
+    src: url(./assets/digital-dream/DIGITALDREAM.ttf);
 }
 
 body {
@@ -72,6 +75,6 @@ button {
 }
 
 p {
-    font-size: 85px;
+    font-size: 45px;
     width: 110px;
 }
