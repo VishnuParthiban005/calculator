@@ -2,6 +2,8 @@ let firstNumber = undefined;
 let operation = undefined;
 let secondNumber = undefined;
 
+const display = document.querySelector(".numbers");
+
 function assign(value) {
     if (firstNumber === undefined) {
         firstNumber = value;
@@ -13,3 +15,7 @@ function assign(value) {
         secondNumber = (secondNumber*10) + value;
     }
 }
+
+const btn1 = document.querySelector(".one");
+btn1.addEventListener("click", assign(1));
+btn1.addEventListener("click", () => display.textContent = firstNumber);
