@@ -3,8 +3,9 @@ let operation = undefined;
 let secondNumber = undefined;
 
 const display = document.querySelector(".numbers");
-display.textContent = "88888";
+display.textContent = "888888888888";
 
+//functions for number buttons
 const one = document.querySelector(".one");
 one.addEventListener("click", () => {
     if (firstNumber === undefined) {
@@ -22,9 +23,45 @@ one.addEventListener("click", () => {
     }
 });
 
+const two = document.querySelector(".two");
+two.addEventListener("click", () => {
+    if (firstNumber === undefined) {
+        firstNumber = 2;
+        display.textContent = firstNumber;
+    } else if (operation === undefined) {
+        firstNumber = (firstNumber*10) + 2;
+        display.textContent = firstNumber;
+    } else if (secondNumber === undefined) {
+        secondNumber = 2;
+        display.textContent = firstNumber + operation + secondNumber;
+    } else {
+        secondNumber = (secondNumber*10) + 2;
+        display.textContent = firstNumber + operation + secondNumber;
+    }
+});
+
+//functions for operation buttons
 const plus = document.querySelector(".plus");
 plus.addEventListener("click", () => {
     operation = "+";
+    display.textContent = firstNumber + operation;
+});
+
+const minus = document.querySelector(".minus");
+minus.addEventListener("click", () => {
+    operation = "-";
+    display.textContent = firstNumber + operation;
+});
+
+const multiply = document.querySelector(".multiply");
+multiply.addEventListener("click", () => {
+    operation = "*";
+    display.textContent = firstNumber + operation;
+});
+
+const divide = document.querySelector(".divide");
+divide.addEventListener("click", () => {
+    operation = "/";
     display.textContent = firstNumber + operation;
 });
 
