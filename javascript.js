@@ -40,6 +40,145 @@ two.addEventListener("click", () => {
     }
 });
 
+const three = document.querySelector(".three");
+three.addEventListener("click", () => {
+    if (firstNumber === undefined) {
+        firstNumber = 3;
+        display.textContent = firstNumber;
+    } else if (operation === undefined) {
+        firstNumber = (firstNumber*10) + 3;
+        display.textContent = firstNumber;
+    } else if (secondNumber === undefined) {
+        secondNumber = 3;
+        display.textContent = firstNumber + operation + secondNumber;
+    } else {
+        secondNumber = (secondNumber*10) + 3;
+        display.textContent = firstNumber + operation + secondNumber;
+    }
+});
+
+const four = document.querySelector(".four");
+four.addEventListener("click", () => {
+    if (firstNumber === undefined) {
+        firstNumber = 4;
+        display.textContent = firstNumber;
+    } else if (operation === undefined) {
+        firstNumber = (firstNumber*10) + 4;
+        display.textContent = firstNumber;
+    } else if (secondNumber === undefined) {
+        secondNumber = 4;
+        display.textContent = firstNumber + operation + secondNumber;
+    } else {
+        secondNumber = (secondNumber*10) + 4;
+        display.textContent = firstNumber + operation + secondNumber;
+    }
+});
+
+const five = document.querySelector(".five");
+five.addEventListener("click", () => {
+    if (firstNumber === undefined) {
+        firstNumber = 5;
+        display.textContent = firstNumber;
+    } else if (operation === undefined) {
+        firstNumber = (firstNumber*10) + 5;
+        display.textContent = firstNumber;
+    } else if (secondNumber === undefined) {
+        secondNumber = 5;
+        display.textContent = firstNumber + operation + secondNumber;
+    } else {
+        secondNumber = (secondNumber*10) + 5;
+        display.textContent = firstNumber + operation + secondNumber;
+    }
+});
+
+const six = document.querySelector(".six");
+six.addEventListener("click", () => {
+    if (firstNumber === undefined) {
+        firstNumber = 6;
+        display.textContent = firstNumber;
+    } else if (operation === undefined) {
+        firstNumber = (firstNumber*10) + 6;
+        display.textContent = firstNumber;
+    } else if (secondNumber === undefined) {
+        secondNumber = 6;
+        display.textContent = firstNumber + operation + secondNumber;
+    } else {
+        secondNumber = (secondNumber*10) + 6;
+        display.textContent = firstNumber + operation + secondNumber;
+    }
+});
+
+const seven = document.querySelector(".seven");
+seven.addEventListener("click", () => {
+    if (firstNumber === undefined) {
+        firstNumber = 7;
+        display.textContent = firstNumber;
+    } else if (operation === undefined) {
+        firstNumber = (firstNumber*10) + 7;
+        display.textContent = firstNumber;
+    } else if (secondNumber === undefined) {
+        secondNumber = 7;
+        display.textContent = firstNumber + operation + secondNumber;
+    } else {
+        secondNumber = (secondNumber*10) + 7;
+        display.textContent = firstNumber + operation + secondNumber;
+    }
+});
+
+
+const eight = document.querySelector(".eight");
+eight.addEventListener("click", () => {
+    if (firstNumber === undefined) {
+        firstNumber = 8;
+        display.textContent = firstNumber;
+    } else if (operation === undefined) {
+        firstNumber = (firstNumber*10) + 8;
+        display.textContent = firstNumber;
+    } else if (secondNumber === undefined) {
+        secondNumber = 8;
+        display.textContent = firstNumber + operation + secondNumber;
+    } else {
+        secondNumber = (secondNumber*10) + 8;
+        display.textContent = firstNumber + operation + secondNumber;
+    }
+});
+
+
+const nine = document.querySelector(".nine");
+nine.addEventListener("click", () => {
+    if (firstNumber === undefined) {
+        firstNumber = 9;
+        display.textContent = firstNumber;
+    } else if (operation === undefined) {
+        firstNumber = (firstNumber*10) + 9;
+        display.textContent = firstNumber;
+    } else if (secondNumber === undefined) {
+        secondNumber = 9;
+        display.textContent = firstNumber + operation + secondNumber;
+    } else {
+        secondNumber = (secondNumber*10) + 9;
+        display.textContent = firstNumber + operation + secondNumber;
+    }
+});
+
+
+const zero = document.querySelector(".zero");
+zero.addEventListener("click", () => {
+    if (firstNumber === undefined) {
+        firstNumber = 0;
+        display.textContent = firstNumber;
+    } else if (operation === undefined) {
+        firstNumber = (firstNumber*10) + 0;
+        display.textContent = firstNumber;
+    } else if (secondNumber === undefined) {
+        secondNumber = 0;
+        display.textContent = firstNumber + operation + secondNumber;
+    } else {
+        secondNumber = (secondNumber*10) + 0;
+        display.textContent = firstNumber + operation + secondNumber;
+    }
+});
+
 //functions for operation buttons
 const plus = document.querySelector(".plus");
 plus.addEventListener("click", () => {
@@ -65,6 +204,7 @@ divide.addEventListener("click", () => {
     display.textContent = firstNumber + operation;
 });
 
+//function for equals button
 const equals = document.querySelector(".equals");
 equals.addEventListener("click", () => {
     if (operation == "+") {
@@ -78,6 +218,7 @@ equals.addEventListener("click", () => {
     }
 });
 
+//function for clear button
 const clear = document.querySelector(".clear");
 clear.addEventListener("click", () => {
     firstNumber = undefined;
@@ -86,54 +227,4 @@ clear.addEventListener("click", () => {
     display.textContent = "";
 });
 
-// function assign(value) {
-//     display.textContent = "1";
-    // if (firstNumber === undefined) {
-    //     firstNumber = value;
-    // } else if (operation === undefined) {
-    //     firstNumber = (firstNumber*10) + value;
-    // } else if (secondNumber === undefined) {
-    //     secondNumber = value;
-    // } else {
-    //     secondNumber = (secondNumber*10) + value;
-    // }
-// }
 
-// const clr = document.querySelector(".clear");
-// clr.addEventListener("click", clear());
-
-// function clear() {
-//     firstNumber = undefined;
-//     operation = undefined;
-//     secondNumber = undefined;
-// }
-
-// function displayNumbers() {
-//     if (secondNumber !== undefined) {
-//         display.textContent = "";
-//         display.textContent = firstNumber + operation + secondNumber;
-//     } else if (operation !== undefined) {
-//         display.textContent = firstNumber + operation;
-//     } else if (firstNumber !== undefined) {
-//         display.textContent = firstNumber;
-//     } else {
-//         display.textContent = "88888";
-//     }
-// }
-
-// const one = document.querySelector(".one");
-// one.addEventListener("click", assign(1));
-// one.addEventListener("click", displayNumbers());
-
-// const two = document.querySelector(".two");
-// two.addEventListener("click", assign(2));
-// two.addEventListener("click", displayNumbers());
-
-// const four = document.querySelector(".four");
-// four.addEventListener("click", assign(4));
-
-// const three = document.querySelector(".three");
-// three.addEventListener("click", assign(3));
-
-// const clr = document.querySelector(".clear");
-// clr.addEventListener("click", clear());
