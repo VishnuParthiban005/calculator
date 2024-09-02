@@ -28,6 +28,18 @@ plus.addEventListener("click", () => {
     display.textContent = firstNumber + operation;
 });
 
+const equals = document.querySelector(".equals");
+equals.addEventListener("click", () => {
+    if (operation == "+") {
+        display.textContent = firstNumber + secondNumber;
+    } else if (operation == '-') {
+        display.textContent = firstNumber - secondNumber;
+    } else if (operation == "*") {
+        display.textContent = firstNumber * secondNumber;
+    } else if (operation == "/") {
+        display.textContent = firstNumber / secondNumber;
+    }
+});
 
 // function assign(value) {
 //     display.textContent = "1";
@@ -40,7 +52,7 @@ plus.addEventListener("click", () => {
     // } else {
     //     secondNumber = (secondNumber*10) + value;
     // }
-}
+// }
 
 // const clr = document.querySelector(".clear");
 // clr.addEventListener("click", clear());
