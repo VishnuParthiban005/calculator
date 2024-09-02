@@ -41,6 +41,14 @@ equals.addEventListener("click", () => {
     }
 });
 
+const clear = document.querySelector(".clear");
+clear.addEventListener("click", () => {
+    firstNumber = undefined;
+    operation = undefined;
+    secondNumber = undefined;
+    display.textContent = "";
+});
+
 // function assign(value) {
 //     display.textContent = "1";
     // if (firstNumber === undefined) {
